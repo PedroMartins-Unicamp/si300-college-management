@@ -1,0 +1,1 @@
+g++ main.cpp -o main $(\find src/ -name "*.cpp") && ./main; rm main
