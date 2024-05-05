@@ -12,7 +12,7 @@ private:
 
 public:
   StudentDTO(std::string name = "", int age = 0, std::string phone = "",
-             std::string course = "", long ra = 000000)
+             std::string course = "", long ra = 0)
       : Person::Person(name, age, phone), course(course), ra(ra){};
 
   virtual ~StudentDTO();

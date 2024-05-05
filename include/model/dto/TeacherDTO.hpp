@@ -11,7 +11,7 @@ class TeacherDTO : Person {
 private:
   int id;
   double salary;
-  std::vector<std::shared_ptr<Subject>> subjects;
+  mutable std::vector<std::shared_ptr<Subject>> subjects;
 
 public:
   TeacherDTO(std::string name = "", int age = 0, std::string phone = "",
@@ -33,6 +33,12 @@ public:
 
   double getSalary() const;
   void setSalary(double salary);
+
+  void mPrivate_addSubject(const std::shared_ptr<Subject> &subject);
+
+  void mPrivate_removeSubject(int index);
+
+  const std::vector<std::shared_ptr<Subject>> getSubjects() const;
 
   void printInfo() const override;
 };

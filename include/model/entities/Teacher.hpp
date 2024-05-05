@@ -21,7 +21,6 @@ public:
   void setAge(int Age);
   void setPhone(std::string phone);
   void setSalary(double salary);
-  void addSubject(Subject subject);
 };
 
 #endif

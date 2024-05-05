@@ -22,7 +22,6 @@ public:
   void setAge(int age);
   void setPhone(std::string phone);
   void setCourse(std::string course);
-  void setRA(long ra);
 };
 
 #endif

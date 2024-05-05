@@ -4,6 +4,7 @@
 #include <string>
 
 class Person {
+protected:
   std::string name;
   int age;
   std::string phone;
@@ -13,14 +14,14 @@ public:
       : name(name), age(age), phone(phone) {}
   virtual ~Person();
 
-  virtual std::string getName() const = 0;
-  virtual void setName(std::string name) = 0;
+  virtual std::string getName() const;
+  virtual void setName(std::string name);
 
-  virtual int getAge() const = 0;
-  virtual void setAge(int age) = 0;
+  virtual int getAge() const;
+  virtual void setAge(int age);
 
-  virtual std::string getPhone() const = 0;
-  virtual void setPhone(std::string phone) = 0;
+  virtual std::string getPhone() const;
+  virtual void setPhone(std::string phone);
 
   virtual void printInfo() const = 0;
 };
