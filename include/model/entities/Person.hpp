@@ -3,26 +3,24 @@
 
 #include <string>
 
-using namespace std;
-
 class Person {
-  string name;
+  std::string name;
   int age;
-  string phone;
+  std::string phone;
 
 public:
-  Person(string name = "", int age = 0, string phone = "")
+  Person(std::string name = "", int age = 0, std::string phone = "")
       : name(name), age(age), phone(phone) {}
   virtual ~Person();
 
-  virtual string getName() const;
-  virtual void setName(string name);
+  virtual std::string getName() const = 0;
+  virtual void setName(std::string name) = 0;
 
-  virtual int getAge() const;
-  virtual void setAge(int age);
+  virtual int getAge() const = 0;
+  virtual void setAge(int age) = 0;
 
-  virtual string getPhone() const;
-  virtual void setPhone(string phone);
+  virtual std::string getPhone() const = 0;
+  virtual void setPhone(std::string phone) = 0;
 
   virtual void printInfo() const = 0;
 };

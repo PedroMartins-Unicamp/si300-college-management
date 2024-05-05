@@ -1,19 +1,18 @@
 #ifndef INCLUDE_CONTROLLER_COLLEGE_H_
 #define INCLUDE_CONTROLLER_COLLEGE_H_
 
-#include <vector>
 #include <memory>
+#include <vector>
 
 #include "Person.hpp"
 
-using namespace std;
-
 class College final {
-	static vector<shared_ptr<Person>> students;
-	static vector<shared_ptr<Person>> teachers;
+  static std::vector<std::shared_ptr<Person>> students;
+  static std::vector<std::shared_ptr<Person>> teachers;
+
 public:
-	static vector<shared_ptr<Person> > & getStudents();
-	static void setStudents(vector<shared_ptr<Person> > &students);
+  static std::vector<std::shared_ptr<Person>> &getStudents();
+  static void setStudents(std::vector<std::shared_ptr<Person>> &students);
 };
 
 #endif

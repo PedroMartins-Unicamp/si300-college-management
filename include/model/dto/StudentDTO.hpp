@@ -5,31 +5,29 @@
 
 #include <string>
 
-using namespace std;
-
 class StudentDTO : Person {
 private:
-  string course;
+  std::string course;
   long ra;
 
 public:
-  StudentDTO(string name = "", int age = 0, string phone = "",
-             string course = "", long ra = 000000)
+  StudentDTO(std::string name = "", int age = 0, std::string phone = "",
+             std::string course = "", long ra = 000000)
       : Person::Person(name, age, phone), course(course), ra(ra){};
 
   virtual ~StudentDTO();
 
-  string getName() const override;
-  void setName(string name) override;
+  std::string getName() const override;
+  void setName(std::string name) override;
 
   int getAge() const override;
   void setAge(int age) override;
 
-  string getPhone() const override;
-  void setPhone(string phone) override;
+  std::string getPhone() const override;
+  void setPhone(std::string phone) override;
 
-  string getCourse() const;
-  void setCourse(string course);
+  std::string getCourse() const;
+  void setCourse(std::string course);
 
   long getRA() const;
 

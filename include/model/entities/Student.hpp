@@ -6,8 +6,6 @@
 #include <memory>
 #include <string>
 
-using namespace std;
-
 class Student {
 private:
   std::unique_ptr<StudentDTO> dto;
@@ -20,10 +18,10 @@ public:
 
   StudentDTO *getDTO() const;
 
-  void setName(string name);
+  void setName(std::string name);
   void setAge(int age);
-  void setPhone(string phone);
-  void setCourse(string course);
+  void setPhone(std::string phone);
+  void setCourse(std::string course);
   void setRA(long ra);
 };
 

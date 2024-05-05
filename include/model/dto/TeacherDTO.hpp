@@ -7,29 +7,27 @@
 #include <memory>
 #include <vector>
 
-using namespace std;
-
 class TeacherDTO : Person {
 private:
   int id;
   double salary;
-  vector<shared_ptr<Subject>> subjects;
+  std::vector<std::shared_ptr<Subject>> subjects;
 
 public:
-  TeacherDTO(string name = "", int age = 0, string phone = "", int id = 0,
-             double salary = 0)
+  TeacherDTO(std::string name = "", int age = 0, std::string phone = "",
+             int id = 0, double salary = 0)
       : Person(name, age, phone), id(id), salary(salary){};
 
   virtual ~TeacherDTO() = default;
 
-  string getName() const override;
-  void setName(string name) override;
+  std::string getName() const override;
+  void setName(std::string name) override;
 
   int getAge() const override;
   void setAge(int age) override;
 
-  string getPhone() const override;
-  void setPhone(string phone) override;
+  std::string getPhone() const override;
+  void setPhone(std::string phone) override;
 
   int getId() const;
 
