@@ -1,10 +1,3 @@
-/*
- * Menu.cpp
- *
- *  Created on: Abr 8, 2024
- *      Author: juan
- */
-
 #include <math.h>
 
 #include "../../include/menu/Menu.hpp"

@@ -1,10 +1,3 @@
-/*
- * System.h
- *
- *  Created on: 8 de abr. de 2024
- *      Author: juan
- */
-
 #ifndef SYSTEM_H_
 #define SYSTEM_H_
 
@@ -33,4 +26,4 @@ public:
 	static const string getFullVersion();
 };
 
-#endif /* SYSTEM_H_ */
+#endif

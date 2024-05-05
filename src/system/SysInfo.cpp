@@ -1,10 +1,3 @@
-/*
- * System.cpp
- *
- *  Created on: 8 de abr. de 2024
- *      Author: juan
- */
-
 #include "../../include/system/SysInfo.hpp"
 
 const string SysInfo::author = "Felipe&Juan";

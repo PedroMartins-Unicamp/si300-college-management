@@ -1,10 +1,3 @@
-/*
- * Controller.cpp
- *
- *  Created on: 8 de abr. de 2024
- *      Author: juan
-*/
-
 #include <exception>
 #include <iostream>
 

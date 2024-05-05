@@ -1,10 +1,3 @@
-/*
- * Controller.h
- *
- *  Created on: 8 de abr. de 2024
- *      Author: juan
- */
-
 #ifndef CONTROLLER_H_
 #define CONTROLLER_H_
 
@@ -36,4 +29,4 @@ public:
 };
 
 
-#endif /* CONTROLLER_H_ */
+#endif

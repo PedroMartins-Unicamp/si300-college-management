@@ -1,24 +1,30 @@
-/*
- * Person.h
- *
- *  Created on: Apr. 14, 2024
- *      Author: juan
- */
-
-#ifndef INCLUDE_PERSON_H_
-#define INCLUDE_PERSON_H_
+#ifndef PERSON_H_
+#define PERSON_H_
 
 #include <string>
 
 using namespace std;
 
 class Person {
-	string name;
-	int age;
-	string phone;
+  string name;
+  int age;
+  string phone;
+
 public:
-	Person(string _name="", int _age=0, string _phone ="" ):name(_name), age(_age), phone(_phone){}
-	virtual ~Person();
+  Person(string name = "", int age = 0, string phone = "")
+      : name(name), age(age), phone(phone) {}
+  virtual ~Person();
+
+  virtual string getName() const;
+  virtual void setName(string name);
+
+  virtual int getAge() const;
+  virtual void setAge(int age);
+
+  virtual string getPhone() const;
+  virtual void setPhone(string phone);
+
+  virtual void printInfo() const = 0;
 };
 
-#endif /* INCLUDE_PERSON_H_ */
+#endif

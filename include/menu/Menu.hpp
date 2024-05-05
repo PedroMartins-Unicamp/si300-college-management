@@ -1,10 +1,3 @@
-/*
- * Menu.h
- *
- *  Created on: Abr 8, 2024
- *      Author: juan
- */
-
 #ifndef MENU_H_
 #define MENU_H_
 
@@ -53,4 +46,4 @@ class Menu final
 		void setZeroForLastOpt(bool zeroForLastOpt = true);
 	};
 
-#endif /* MENU_H_ */
+#endif 
